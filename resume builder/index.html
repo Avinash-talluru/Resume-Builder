@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <form id="resumeForm">
+      <input type="text" placeholder="Full Name" id="name" required>
+      <input type="email" placeholder="Email" id="email" required>
+
+      <textarea placeholder="Education (e.g., B.Sc. in CS at XYZ University)" id="education" required></textarea>
+      <textarea placeholder="Skills (comma separated)" id="skills" required></textarea>
+      <textarea placeholder="Experience (e.g., Intern at ABC - 6 months)" id="experience" required></textarea>
+
+      <label>Upload AI-Generated PDF Report (optional):</label>
+      <input type="file" id="aiReport" accept=".pdf">
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput" class="resume-output"></div>
+
+    <button id="downloadBtn" style="display: none;">Download as PDF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
